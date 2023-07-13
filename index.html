@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ICoMS 2023</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Noto);
+
+      .dark {
+        background: #212934;
+        color: white;
+      }
+      body, h1, h2, h3 {font-family: 'Roboto';}
+      body {font-size: 30px;}
+      h1, h2, h3 {font-weight: normal; font-weight: 400; margin-bottom: 0;}
+      .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+      .remark-slide-content { font-size: 30px; }
+
+      a:link {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: dark
+layout: true 
+
+<div style="float: right">
+  <img height="40px" src="./assets/HTWK.svg" />
+</div>
+---
+<div class="center middle" style="position: relative; top: 70px;">
+<h1>
+  <div style="width: 80%;margin-left: auto;margin-right: auto;">The Mathematical Pitfalls of</div>
+  <div>the Original Single Particle Model</div>
+</h1>
+<p>Willi Zschiebsch<sup>1</sup>, Prof. Dr. Jochen Merker<sup>2</sup>, Prof. Dr. habil. R. Böhm<sup>1</sup></p>
+
+<p><sup>1</sup>Department of Engineering<br>University of Applied Sciences Leipzig</p>
+<p><sup>2</sup>Centre for Mathematics and Natural Sciences<br>University of Applied Sciences Leipzig</p>
+</div>
+---
+
+# Structural Batteries
+
+.center.middle[<img height="504" src="./assets/model.svg" />]
+
+---
+
+<h1>Single (Spinel) Particle Model</h1>
+
+<img height="504" src="./assets/spm.svg" />
+<div style="position: absolute; float: right; bottom: 50px; right:100px; border: 3px solid #ccc !important; border-radius: 10px;">
+<img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+<p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
+</div>
+
+---
+
+<h1>Single (Spinel) Particle Model</h1>
+
+<div>
+ion transport:
+$$\frac{\partial c}{\partial t} = 
+\frac{1}{r^2} \frac{\partial}{\partial r} \left( D r^2\frac{\partial c}{\partial r} \right)$$
+
+with BCs:
+<ul>
+  <li>$0 = \left. \frac{\partial c}{\partial r} \right\rvert_{r=0}$</li>
+  <li>$j = -D \left( \left. \frac{\partial c}{\partial r} \right\rvert_{r=R_p} \right)$</li>
+</ul>
+
+<img height="300" src="./assets/spm.svg" style="left: 650px;position: relative;top: -300px;"/>
+</div>
+
+---
+
+# Buttler-Volmer equation
+
+<div style="margin: -0.4em;">
+  $$j = j_0 \left[ \exp \left( \frac{(1-\beta) F \eta}{RT} \right) - \exp \left( -\frac{\beta F \eta}{RT} \right)  \right]$$
+</div>
+with:
+<div style="margin: -0.4em;">
+$$j_0 = k (c_l)^{1-\beta} (c_s)^\beta (c_t - c_s)^{1-\beta}$$
+</div>
+<img height="350" src="./assets/spm_with_concentrations.svg" style="position: absolute; right: 50px; top: 300px;"/>
+
+---
+
+# Buttler-Volmer equation
+<div style="margin: -0.4em;">
+$$j = j_0 \left[ \exp \left( \frac{(1-\beta) F \eta}{RT} \right) - \exp \left( -\frac{\beta F \eta}{RT} \right)  \right]$$
+</div>
+with:
+<div style="margin: -0.4em;">
+$$j_0 = k (c_l)^{1-\beta} (c_s)^\beta (c_t - c_s)^{1-\beta}$$
+</div>
+introduce <b><i>state of charge</i></b>:
+<div style="margin: -0.4em;">
+$$y = \frac{c}{c_t}$$
+</div>
+finaly results in:
+<div style="margin: -0.4em;">
+$$j_0 = k c_t (c_l)^{1-\beta} (y_s)^\beta (1 - y_s)^{1-\beta}$$
+</div>
+<img height="350" src="./assets/spm_with_concentrations.svg" style="position: absolute; right: 50px; top: 300px;"/>
+
+---
+<h1>Buttler-Volmer equation</h1>
+<br>
+.center[<img height="504" src="./assets/spm_j(y).svg" />]
+---
+<h1>Buttler-Volmer equation</h1>
+<br>
+.center[<img height="504" src="./assets/spm_j(y).svg" />]
+<div style="position: absolute;top: 290px;left: 880px;width: 300px;height: 100px;">
+<svg viewBox="-10 0 300 100" preserveAspectRatio="xMidYMid slice" role="img">
+  <g transform="rotate(30 50 50)">
+  <ellipse cx="50" cy="50" rx="60" ry="30" style="stroke: #52c3ce; fill:none; stroke-width: 0.3em;" />
+  </g>
+  <text x="0" y="5" style="fill: #52c3ce;">
+    <tspan x="100" dy=".6em">unexpected!</tspan>
+  </text>
+</svg>
+</div>
+
+---
+
+<h1>Over Potential</h1>
+<br>
+$$ \eta = U\_{app} -  U\_{ocp}$$
+<br>
+--
+
+<div  style="display: block; position:absolute;width: 100%;left: 0px;top: 170px;">
+  <svg viewBox="0 0 300 100" preserveAspectRatio="xMidYMid slice" role="img">
+    <rect  x="136" width="18" y="4" height="18" rx="1"  style="fill: none; stroke:yellow"/>
+  </svg> 
+</div>
+<img width="460" src="assets/spm_Uapp(t).svg" style="float:left;border: 5px solid yellow !important; border-radius: 10px;">
+
+--
+<div  style="display: block; position:absolute;width: 100%;left: 0px;top: 170px;">
+  <svg viewBox="0 0 300 100" preserveAspectRatio="xMidYMid slice" role="img">
+    <rect  x="163" width="18" y="4" height="18" rx="1"  style="fill: none; stroke:red"/>
+  </svg> 
+</div>
+<img width="460" src="assets/spm_Uocp(y).svg" style="float:right;border: 5px solid red !important; border-radius: 10px;">
+---
+
+<h1>Open-Circuit Potential</h1>
+
+$$
+    \begin{aligned}
+        U_{ocp}(y_s) &=  4.19829 \newline
+        &+ 0.0565661 \tanh \left(-14.5546 y_s + 8.60942\right)\newline
+        &- 0.0275479 \left[(0.998432 - y_s)^{-0.492465} - 1.90111\right]\newline
+        &- 0.157123 \exp(-0.04738 y_s^8)\newline
+        &+ 0.810239 \exp(-40 y_s + 5.355)
+    \end{aligned}
+$$
+
+<div style="position: absolute; float: right; bottom: 50px; left:100px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_Uocp.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1836921">10.1149/1.1836921</a></p>
+</div>
+
+--
+
+<div style="position: absolute; float: right; bottom: 50px; right:100px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
+</div>
+<div  style="display: block; position:absolute;width: 100%;left: 0px;top: 170px;">
+  <svg viewBox="0 0 300 100" preserveAspectRatio="xMidYMid slice" role="img">
+    <rect  x="129" width="53" y="23" height="13" rx="1"  style="fill: none; stroke:red"/>
+  </svg> 
+</div>
+
+---
+
+<h1>Open-Circuit Potential</h1>
+
+<br>
+<img width="800" src="./assets/spm_Uocp(y).svg"/>
+
+<div style="position: absolute; float: right; top: 150px; right:50px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
+</div>
+<div style="position: absolute; float: right; bottom: 80px; right:50px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_bms.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>ISBN:</b> <a href="https://ieeexplore.ieee.org/document/9100168">9781630810245</a></p>
+</div>
+
+---
+
+# Results
+
+.center.middle[<iframe width="896" height="504" src="https://www.youtube.com/embed/ncqX6xbSbL4?autoplay=1&showinfo=0?loop=1&rel=0" frameborder="0" allowfullscreen controls autoplay></iframe>]
+
+---
+
+<h1>Benchmarktests</h1>
+
+<br>
+.middle[<img width="800" src="./assets/sol_benchmark(y).svg"/>]
+
+<div style="position: absolute; float: right; bottom: 80px; right:50px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_github.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://github.com/willi-z/batmania/blob/master/SPM_Zhang.ipynb">GitHub-Repo</a></p>
+</div>
+
+---
+<div class="center middle">
+  <h1 style="width: 80%; text-align: center; margin-left: auto;">Thank you for listening!</h1>
+  <div style="text-align: left;width: 50%;font-size: 30px;position: relative;left: 30%;">
+    <p>This research was sponsored by:</p>
+    <img height="250px"
+    src="./assets/sponsor.png">
+    <p>on the basis of a resolution<br>
+    of the German Bundestag</p>
+  </div>
+</div>
+
+<div style="position: absolute; float: left; top: 150px; left:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_github.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://github.com/willi-z/batmania/blob/master/SPM_Zhang.ipynb">GitHub-Repo</a></p>
+</div>
+
+<div style="position: absolute; float: left; bottom: 80px; left:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_youtube.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://www.youtube.com/watch?v=ncqX6xbSbL4">Youtube</a></p>
+</div>
+
+
+<div style="position: absolute; float: right; top: 150px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_linkedin.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://www.linkedin.com/in/willi-zschiebsch-9bb9181bb">LinkedIn</a></p>
+</div>
+
+<div style="position: absolute; float: right; bottom: 80px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+  <img height="150" src="./assets/ref_orcid.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
+  <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://orcid.org/0000-0001-5365-3521">ORCiD</a></p>
+</div>
+
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+
+    
+    <script src="https://unpkg.com/katex/dist/katex.min.js"></script>
+    <script src="https://unpkg.com/katex/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/katex/dist/katex.min.css" />
+    <!-- option: katex 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    -->
+    <script>
+      var slideshow = remark.create({
+          ratio: '16:9',
+        }, () => {
+        // KaTeX sessting
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  </body>
+</html>
