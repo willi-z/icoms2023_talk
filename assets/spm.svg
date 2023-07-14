@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="150mm"
+   width="160mm"
    height="125mm"
-   viewBox="0 0 150 125"
+   viewBox="0 0 160 125"
    version="1.1"
    id="svg5"
    xml:space="preserve"
@@ -29,7 +29,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.28"
-     inkscape:cx="466.79688"
+     inkscape:cx="467.57812"
      inkscape:cy="287.5"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
@@ -62,8 +62,8 @@
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : -469.49993 : 1"
        inkscape:vp_y="0 : 1000.0003 : 0"
-       inkscape:vp_z="841.00011 : -469.49993 : 1"
-       inkscape:persp3d-origin="420.50004 : -667.66672 : 1"
+       inkscape:vp_z="841.00009 : -469.49993 : 1"
+       inkscape:persp3d-origin="420.50002 : -667.66672 : 1"
        id="perspective32004" /><rect
        x="986.26202"
        y="2567.2231"
@@ -1163,7 +1163,7 @@
        y="0"><tspan
          x="1070.8421"
          y="2600.9867"
-         id="tspan5092">ion</tspan></text><text
+         id="tspan1253">ion</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,110.5513,-649.34586)"
        id="text27221-50"
@@ -1172,7 +1172,7 @@
        y="0"><tspan
          x="1074.6022"
          y="2600.9867"
-         id="tspan5094">j&lt;0</tspan></text><text
+         id="tspan1255">j&lt;0</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,99.956363,-669.65258)"
        id="text27221-50-6"
@@ -1181,7 +1181,7 @@
        y="0"><tspan
          x="1074.6022"
          y="2600.9867"
-         id="tspan5096">j&gt;0</tspan></text><text
+         id="tspan1257">j&gt;0</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-18.513835,-624.48315)"
        id="text27221-5"
@@ -1190,7 +1190,7 @@
        y="0"><tspan
          x="1070.6508"
          y="2600.9867"
-         id="tspan5098">particle</tspan></text><path
+         id="tspan1259">particle</tspan></text><path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;marker-end:url(#Arrow5-9)"
        d="m 296.86412,42.169649 39.14254,-3.45663"
        id="path31769"
@@ -1216,4 +1216,4 @@
        y="0"><tspan
          x="379.64311"
          y="2270.3558"
-         id="tspan5100">Single Spinel Particle</tspan></text></g></svg>
+         id="tspan1261">Single Spinel Particle</tspan></text></g></svg>

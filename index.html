@@ -17,6 +17,13 @@
       .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
       .remark-slide-content { font-size: 30px; }
 
+      .link-box {
+        /*
+        border: 3px solid #ccc !important; 
+        border-radius: 10px;
+        */
+      }
+
       a:link {
         color: yellow;
         background-color: transparent;
@@ -62,7 +69,8 @@ layout: true
 <br>
 <div style="position: relative;">
 <img height="504" src="./assets/spm.svg" style="position: absolute; top:-30px"/>
-<div style="position: relative; float: right; top: 230px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: relative; float: right; top: 230px;">
 <img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
 <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
 </div>
@@ -98,7 +106,7 @@ with:
 <div style="margin: -0.4em;">
 $$j_0 = k (c_l)^{1-\beta} (c_s)^\beta (c_t - c_s)^{1-\beta}$$
 </div>
-<img height="350" src="./assets/spm_with_concentrations.svg" style="position: absolute; right:0px; top: 120px;"/>
+<img height="250" src="./assets/spm_with_concentrations.svg" style="position: absolute; right:0px; top: 140px;"/>
 </div>
 
 ---
@@ -121,7 +129,7 @@ finaly results in:
 <div style="margin: -0.4em;">
 $$j_0 = k c_t (c_l)^{1-\beta} (y_s)^\beta (1 - y_s)^{1-\beta}$$
 </div>
-<img height="350" src="./assets/spm_with_concentrations.svg" style="position: absolute; right:0px; top: 120px;"/>
+<img height="250" src="./assets/spm_with_concentrations.svg" style="position: absolute; right:0px; top: 140px;"/>
 </div>
 
 
@@ -179,14 +187,15 @@ $$
         &+ 0.810239 \exp(-40 y_s + 5.355)
     \end{aligned}
 $$
-
-<div style="position: absolute; float: right; bottom: 30px; left:160px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; bottom: 30px; left:160px;">
   <img height="150" src="./assets/ref_Uocp.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1836921">10.1149/1.1836921</a></p>
 </div>
 
 --
-<div style="position: absolute; float: right; bottom: 30px; right:160px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; bottom: 30px; right:160px;">
   <img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
 </div>
@@ -202,12 +211,13 @@ $$
 
 <br>
 <img width="800" src="./assets/spm_Uocp(y).svg" style="position:absolute; left:60px;"/>
-
-<div style="position: absolute; float: right; top: 150px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; top: 150px; right:60px;">
   <img height="150" src="./assets/ref_spm.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>DOI:</b> <a href="https://iopscience.iop.org/article/10.1149/1.1393279">10.1149/1.1393279</a></p>
 </div>
-<div style="position: absolute; float: right; bottom: 80px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; bottom: 80px; right:60px;">
   <img height="150" src="./assets/ref_bms.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><b>ISBN:</b> <a href="https://ieeexplore.ieee.org/document/9100168">9781630810245</a></p>
 </div>
@@ -224,8 +234,8 @@ $$
 
 <br>
 <img width="800" src="./assets/sol_benchmark(y).svg" style="position:absolute; left:60px;"/>
-
-<div style="position: absolute; float: right; bottom: 180px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; bottom: 180px; right:60px;">
   <img height="150" src="./assets/ref_github.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://github.com/willi-z/batmania/blob/master/SPM_Zhang.ipynb">GitHub-Repo</a></p>
 </div>
@@ -241,24 +251,23 @@ $$
     of the German Bundestag</p>
   </div>
 </div>
-
-<div style="position: absolute; float: left; top: 150px; left:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: left; top: 150px; left:60px;">
   <img height="150" src="./assets/ref_github.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://github.com/willi-z/batmania/blob/master/SPM_Zhang.ipynb">GitHub-Repo</a></p>
 </div>
-
-<div style="position: absolute; float: left; bottom: 80px; left:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: left; bottom: 80px; left:60px;">
   <img height="150" src="./assets/ref_youtube.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://www.youtube.com/watch?v=ncqX6xbSbL4">Youtube</a></p>
 </div>
-
-
-<div style="position: absolute; float: right; top: 150px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; top: 150px; right:60px;">
   <img height="150" src="./assets/ref_linkedin.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://www.linkedin.com/in/willi-zschiebsch-9bb9181bb">LinkedIn</a></p>
 </div>
-
-<div style="position: absolute; float: right; bottom: 80px; right:60px; border: 3px solid #ccc !important; border-radius: 10px;">
+<!--Source-->
+<div class="link-box" style="position: absolute; float: right; bottom: 80px; right:60px;">
   <img height="150" src="./assets/ref_orcid.png" style="margin-left: auto;margin-right: auto;display: block; margin-top: 10px"/>
   <p style="text-align: center;width: 225px; margin-top: 5px; margin-bottom: 10px;font-size: 20px;"><a href="https://orcid.org/0000-0001-5365-3521">ORCiD</a></p>
 </div>
