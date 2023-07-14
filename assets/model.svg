@@ -37,7 +37,11 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g13451"
-     showguides="true" /><defs
+     showguides="true" />
+     <style>
+     marker{fill:#ffffff;}
+     </style>
+     <defs
      id="defs2"><rect
        x="377.15326"
        y="2426.781"
